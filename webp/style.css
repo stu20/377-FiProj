@@ -1,0 +1,29 @@
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.course {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.label {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+}
+
+.input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+  
