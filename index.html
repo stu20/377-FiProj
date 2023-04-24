@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="//d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8" />
     <title>Sonny's INST377 UMD Course Schedule</title>
@@ -17,7 +18,13 @@
       <button type="submit">Filter</button>
     </form>
 
-    <div id="schedule"></div>
+    <div id="my_dataviz"></div>
+      <div id="graph"></div>
+      <form id="filter-form">
+        <!-- form elements here -->
+      </form>
+      <div id="schedule"></div> 
+
 
     <script src="script.js"></script>
   </body>
