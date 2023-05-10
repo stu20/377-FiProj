@@ -4,10 +4,18 @@
     <script src="//d3js.org/d3.v3.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8" />
-    <title>Sonny's INST377 UMD Course Schedule</title>
+    <title>Sonny's INST377 UMD Course Explorer</title>
   </head>
+
+<nav>
+  <div class="nav-buttons">
+    <a class="nav-link" href="index.html">Index</a>
+    <a class="nav-link" href="about.html">About</a>
+  </div>
+</nav>
+
   <body>
-    <h1>UMD Course Schedule</h1>
+    <h1>UMD Course Explorer</h1>
     <form id="filter-form">
       <label for="course-name">Course Name:</label>
       <input type="text" id="course-name" name="course-name" />
@@ -21,11 +29,18 @@
     <div id="my_dataviz"></div>
       <div id="graph"></div>
       <form id="filter-form">
-        <!-- form elements here -->
       </form>
       <div id="schedule"></div> 
 
 
     <script src="script.js"></script>
   </body>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2023 <a href="https://github.com/stu20/377-FiProj">stu20</a>
+      </p>
+    </div>
+  </footer>
+
 </html>

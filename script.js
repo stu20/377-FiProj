@@ -55,6 +55,8 @@ async function mainEvent() {
         var width = 960,
         height = 500;
         //creates nodes based on array filteredCourses and sizes them based on their course_id
+        nodes = []
+
         var nodes = filteredCourses.map(function(course) {
             var radius = 6;
             if (course.course_id.startsWith("INST1")) {
@@ -75,7 +77,7 @@ async function mainEvent() {
         root.fixed = true;
 
         var color = d3.scale.category10();
-        // Sets gravity so that they are attractived to center of svg
+        // Sets gravity so that they are attracted to center of svg
         var force = d3.layout.force()
             .gravity(0.05)
             .charge(function(d, i) { return i ? 0 : -2000; })
@@ -83,7 +85,7 @@ async function mainEvent() {
             .size([width, height]);
 
         force.start();
-
+        
         var svg = d3.select("body").append("svg")
             .attr("width", width)
             .attr("height", height);

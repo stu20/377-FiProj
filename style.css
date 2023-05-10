@@ -1,7 +1,39 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1;
+}
+  
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.nav-buttons a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+  
+.nav-buttons a:hover {
+    background-color: #555;
+}
+  
+body {
+    padding-top: 60px; /* set to the height of the navbar */
+    background-color: #f2f2f2;
+}
+  
+  
 .schedule {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
 .course {
     width: 25%;
@@ -37,3 +69,57 @@
     fill: none;
     pointer-events: none;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.instructions {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+  
+.instructions h2 {
+    animation: slide-in-top 1s ease-out;
+  }
+  
+.instructions p {
+    animation: slide-in-bottom 1s ease-out;
+    animation-delay: 0.5s;
+}
+  
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+  
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
